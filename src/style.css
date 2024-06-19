@@ -1,19 +1,23 @@
 body {
-  background: #f9f7fe;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(155, 193, 247) 74.6%
+  );
   font-family: "Roboto", sans-serif;
 }
 
 a {
-  color: #885df1;
+  color: #67a4f8;
 }
 
 .weather-app {
-  background: white;
+  background: #c2daf9;
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 25px 45px rgba(148, 148, 148, 0.8);
 }
 
 header {
@@ -22,24 +26,24 @@ header {
 }
 
 .search-form-input {
-  background-color: #f9f7fe;
-  border: none;
+  background-color: #c2daf9;
+  border: 1px inset;
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
-  padding: 20px;
+  padding: 18px 25px;
   width: 75%;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
-.search-button {
+.search-form-button {
   margin-left: 5px;
-  font-size: 16px;
-  background-color: #885df1;
+  font-size: 17px;
+  background-color: #67a4f8;
   color: white;
   border: none;
-  padding: 20px;
+  padding: 18px 25px;
   line-height: 1;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 main {
@@ -65,25 +69,25 @@ main {
 }
 
 .weather-app-details strong {
-  color: #f65282;
+  color: #f95959;
 }
 
-.weather-app-temperature-container {
+.weather-container {
   display: flex;
 }
 
-.weather-app-icon {
-  width: 88px;
-  height: 88px;
+.weather-icon {
+  width: 80px;
+  height: 80px;
 }
 
-.weather-app-temperature {
+.weather-temp {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
 }
 
-.weather-app-unit {
+.weather-unit {
   margin-top: 6px;
   font-size: 28px;
 }
@@ -103,13 +107,15 @@ main {
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: #f95959;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -123,6 +129,5 @@ footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 15px;
-
   color: rgba(39, 33, 66, 0.4);
 }
