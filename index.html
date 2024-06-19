@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>My weather application</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
             class="search-form-input"
             id="search-form-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
 
@@ -40,64 +40,19 @@
               <strong id="wind-speed"></strong>
             </p>
           </div>
-          <div class="weather-app-temperature-container">
-            <div id="icon"></div>
-            <div class="weather-app-temperature" id="temperature"></div>
-            <div class="weather-app-unit">°C</div>
+          <div class="weather-container">
+            <div>
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
+                class="weather-icon"
+                id="icon"
+              />
+            </div>
+            <div class="weather-temp" id="temperature"></div>
+            <div class="weather-unit">&deg;C</div>
           </div>
         </div>
-        <div class="weather-forecast">
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="weather-forecast-icon">🌤️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>15º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Thu</div>
-            <div class="weather-forecast-icon">🌤️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>15º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Fri</div>
-            <div class="weather-forecast-icon">🌤️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>15º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Sat</div>
-            <div class="weather-forecast-icon">🌤️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>15º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Sun</div>
-            <div class="weather-forecast-icon">🌤️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>15º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
 
       <footer>
@@ -122,6 +77,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
-  <script src="src/index.js"></script>
 </html>
